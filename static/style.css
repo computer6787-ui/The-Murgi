@@ -2,77 +2,24 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff0f6;
-    color: #7e4d65;
+    color: #390c22;
+    position: relative;
+    font-size: medium;
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
-    width: 100%;
-    text-align: center;
+    height: 60vh; /* smaller than full screen on mobile */
+    background: url("baground.png") no-repeat center center;
+    background-size: contain; /* keeps full image, fits inside container */
+    background-color: #be83a1; /* optional fallback */
 }
 
-/* Image fills width, keeps ratio */
-.hero img.hero-img {
-    width: 100%;
-    height: auto; 
-    max-height: 100vh;  /* limits vertical height */
-    object-fit: contain; /* keeps full image visible */
-    display: block;
-}
-
-/* Pink overlay */
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,182,193,0.4); /* pink overlay */
-    pointer-events: none; /* allows clicks to pass through */
-}
-
-/* Centered header text */
-.hero h1 {
-    position: absolute;
-    top: 5%;
-    left: 20%;
-   
-    color: #773356; /* changed to pink */
-    opacity: 0.8;
-    font-size: 40px;
-    margin: 0;
-    z-index: 2;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-/* Tablet screens */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 36px;
-    }
-    .hero img.hero-img {
-        max-height: 50vh;
-    }
-}
-
-/* Mobile screens */
+/* Mobile adjustment */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-    .hero img.hero-img {
-        max-height: 40vh;
-    }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 22px;
-    }
-    .hero img.hero-img {
-        max-height: 35vh;
+    .hero {
+        height: 40vh; /* make it smaller on phones */
+        background-size: contain;
     }
 }
 
@@ -151,19 +98,4 @@ button {
 button:hover {
     background-color: #e754a6;
     transform: scale(1.05); 
-}
-
-/* Hero adjustments for responsiveness */
-.hero h1 {
-    font-size: 38px;
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 50vh;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
 }
