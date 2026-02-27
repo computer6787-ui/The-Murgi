@@ -15,8 +15,8 @@ body {
 /* Image fills width, keeps ratio */
 .hero img.hero-img {
     width: 100%;
-    height: auto;
-    max-height: 60vh;  /* limits vertical height */
+    height: auto; 
+    max-height: 100vh;  /* limits vertical height */
     object-fit: contain; /* keeps full image visible */
     display: block;
 }
@@ -36,7 +36,7 @@ body {
 .hero h1 {
     position: absolute;
     top: 5%;
-    left: 24%;
+    left: 20%;
    
     color: #773356; /* changed to pink */
     opacity: 0.8;
