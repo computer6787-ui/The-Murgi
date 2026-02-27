@@ -8,14 +8,14 @@ body {
 /* Hero Section */
 /* Hero Section */
 .hero {
-    height: 60vh;  /* main section height */
+    height: 100vh;  /* main section height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
     /* Background image */
-    background: url("background.jpg") no-repeat center center;
+    background: url("baground.png") no-repeat center center;
     background-size: contain; /* keeps full image visible */
     background-color: #fce4ec; /* fallback background */
 }
