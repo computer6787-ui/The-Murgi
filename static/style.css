@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f6;
+    color: #5a3d4b;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("baground.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1px;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 182, 193, 0.45);
+}
+ 
+.list-title {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.list-title h2 {
+    font-size: 28px;
+    color: #d63384;
+    font-weight: 700;
+}
+/* Gallery */
+.gallery {
+    padding: 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Chicken Card */
+.chicken-card {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+    transition: 0.3s ease;
+}
+
+.chicken-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(255, 105, 180, 0.25);
+}
+
+/* Chicken Image */
+.chicken {
+    width: 160px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* Chicken Name */
+.chicken-name {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #d63384;
+}
+
+/* Popup Background */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 182, 193, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-content {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+}
+
+/* Buttons */
+button {
+    margin: 10px 5px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #e754a6;
+    transform: scale(1.05); 
+}
