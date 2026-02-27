@@ -3,23 +3,21 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff0f6;
     color: #390c22;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Hero Section */
 .hero {
-    height: 60vh; /* smaller than full screen on mobile */
-    background: url("baground.png") no-repeat center center;
-    background-size: contain; /* keeps full image, fits inside container */
-    background-color: #be83a1; /* optional fallback */
+    width: 100%;
+    text-align: center;
 }
 
-/* Mobile adjustment */
-@media (max-width: 768px) {
-    .hero {
-        height: 40vh; /* make it smaller on phones */
-        background-size: contain;
-    }
+.hero img.hero-img {
+    width: 100%;       /* fills width */
+    height:auto;      /* keeps original aspect ratio */
+    max-height: 100vh;  /* adjust for screen height */
+    object-fit: calc(); /* ensures no cropping */
+    background-color: #c678a2;
 }
 
 /* Gallery */
